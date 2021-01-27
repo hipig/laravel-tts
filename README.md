@@ -1,6 +1,6 @@
 <h1 align="center"> laravel-tts </h1>
 
-<p align="center"> A Text To Speech SDK.</p>
+<p align="center"> Text to speech for Laravel Application.</p>
 
 
 ## Installing

@@ -1,6 +1,6 @@
 {
     "name": "hipig\/laravel-tts",
-    "description": "A Text To Speech SDK",
+    "description": "Text to speech for Laravel Application.",
     "license": "MIT",
     "authors": [
         {
@@ -8,7 +8,10 @@
             "email": "205270006@qq.com"
         }
     ],
-    "require": {},
+    "require": {
+        "textalk/websocket": "^1.5",
+        "ext-json": "*"
+    },
     "autoload": {
         "psr-4": {
             "Hipig\\LaravelTts\\": "src"
