@@ -1,5 +1,7 @@
 <?php
 
+namespace Hipig\LaravelTts\Contracts;
+
 /**
  * Interface SpeechInterface
  */
@@ -8,40 +10,82 @@ interface SpeechInterface
     /**
      * Get speed.
      *
-     * @param GatewayInterface|null $gateway
      * @return string
      */
-    public function getSpd(GatewayInterface $gateway = null) :string;
+    public function getSpd() :string;
 
     /**
      * Get pitch.
      *
-     * @param GatewayInterface|null $gateway
      * @return string
      */
-    public function getPit(GatewayInterface $gateway = null) :string;
+    public function getPit() :string;
 
     /**
      * Get volume.
      *
-     * @param GatewayInterface|null $gateway
      * @return string
      */
-    public function getVol(GatewayInterface $gateway = null) :string;
+    public function getVol() :string;
 
     /**
      * Get per.
      *
-     * @param GatewayInterface|null $gateway
      * @return string
      */
-    public function getPer(GatewayInterface $gateway = null) :string;
+    public function getPer() :string;
 
     /**
      * Get aue.
      *
-     * @param GatewayInterface|null $gateway
      * @return string
      */
-    public function getAue(GatewayInterface $gateway = null) :string;
+    public function getAue() :string;
+
+    /**
+     * Set speed.
+     *
+     * @param string $spd
+     * @return $this
+     */
+    public function setSpd(string $spd);
+
+    /**
+     * Set pitch.
+     *
+     * @param string $pit
+     * @return $this
+     */
+    public function setPit(string $pit);
+
+    /**
+     * Set volume.
+     *
+     * @param string $vol
+     * @return $this
+     */
+    public function setVol(string $vol);
+
+    /**
+     * Set per.
+     *
+     * @param string $per
+     * @return $this
+     */
+    public function setPer(string $per);
+
+    /**
+     * Set aue.
+     *
+     * @param string $aue
+     * @return $this
+     */
+    public function setAue(string $aue);
+
+    /**
+     * Return speech supported gateways.
+     *
+     * @return array
+     */
+    public function getGateways();
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Hipig\LaravelTts\Contracts;
+
 /**
  * Interface StrategyInterface
  */
